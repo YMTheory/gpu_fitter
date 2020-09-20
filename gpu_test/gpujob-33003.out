@@ -1,0 +1,36 @@
+0: gpu023.ihep.ac.cn
+GPU 0: Tesla V100-SXM2-32GB (UUID: GPU-17f9f45a-502c-34a8-e8fd-7e7f09ff023a)
+GPU 1: Tesla V100-SXM2-32GB (UUID: GPU-0f3133ab-9c1f-b877-ef6d-4933a42b5cf3)
+Allocate GPU cards : 0,1
+cuda env enable
+==22901== NVPROF is profiling process 22901, command: ./test_gpu
+Max Error: 0
+==22901== Warning: The user does not have permission to profile on the target device. See the following link for instructions to enable permissions and get more information: https://developer.nvidia.com/NVSOLN1000 
+==22901== Profiling application: ./test_gpu
+==22901== Profiling result:
+No kernels were profiled.
+No API activities were profiled.
+==22901== Warning: Some profiling data are not recorded. Make sure cudaProfilerStop() or cuProfilerStop() is called before application exit to flush profile data.
+	Command being timed: "nvprof ./test_gpu"
+	User time (seconds): 0.10
+	System time (seconds): 0.48
+	Percent of CPU this job got: 20%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 204084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 26805
+	Voluntary context switches: 526
+	Involuntary context switches: 122
+	Swaps: 0
+	File system inputs: 1184
+	File system outputs: 768
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
