@@ -44,6 +44,9 @@ srun -l hostname
 # list the GPU cards of the host
 /usr/bin/nvidia-smi -L
 echo "Allocate GPU cards : ${CUDA_VISIBLE_DEVICES}"
-source /hpcfs/juno/junogpu/yumiao/gpu_fitter/setup.sh
-source activate gpu
-python test.py
+source /hpcfs/juno/junogpu/yumiao/gpu_test/setup.sh
+source /hpcfs/juno/junogpu/yumiao/miniconda3/bin/activate
+#source activate gpu
+conda activate gpu
+(time python gamma_model.py) &> log
+conda deactivate
